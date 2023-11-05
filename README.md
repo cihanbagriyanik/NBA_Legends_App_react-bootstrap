@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+![ezgif com-gif-maker](https://github.com/cihanbagriyanik/NBA_Legends_App_react-bootstrap/assets/132518854/33494b45-296e-414a-b376-32c0867af0ac)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
