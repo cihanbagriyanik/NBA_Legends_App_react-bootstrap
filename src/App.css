@@ -24,15 +24,20 @@ body {
     width: 400px;
 }
 
+.player-card:hover {
+    box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.8)
+}
+
 .cardImg {
     width: 100%;
     height: 450px;
     transition: all ease-in-out 0.8s;
-    cursor: pointer;
+
 }
 
 .cardImg:hover {
     scale: 0.9;
+    ;
 }
 
 .sta-li {

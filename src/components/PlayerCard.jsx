@@ -10,15 +10,16 @@ function PlayerCard({ name, img, statistics }) {
 
 
     return (
-        <Card className=' player-card rounded-2 p-0 '
+        <Card className=' player-card rounded-2 p-0 ' role='button'
             onClick={() => setStatistic(!statistic)} >
             {(statistic == true)
                 ? <Card.Img className=' cardImg' variant="top" src={img} />
-                : <ListGroup className='d-flex flex-grow-1 justify-content-center align-items-center border-0'>
-                    <ListGroup.Item className='sta-li d-flex h5 text-start'>🏀 {statistics[0]}</ListGroup.Item>
-                    <ListGroup.Item className='sta-li d-flex h5 text-start'>🏀 {statistics[1]}</ListGroup.Item>
-                    <ListGroup.Item className='sta-li d-flex h5 text-start'>🏀 {statistics[2]}</ListGroup.Item>
-                    <ListGroup.Item className='sta-li d-flex h5 text-start'>🏀 {statistics[3]}</ListGroup.Item>
+                : <ListGroup className='flex-grow-1 ms-5 border-0 justify-content-center'>
+                    {statistics.map((item, index) => {
+                        return (
+                            <li className='h5 text-start mb-4 list-unstyled' key={index}>🏀 {item} </li>
+                        )
+                    })}
                 </ListGroup>
             }
 
