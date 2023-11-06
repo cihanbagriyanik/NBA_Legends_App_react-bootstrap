@@ -22,7 +22,7 @@ const CardContainer = () => {
             <div className='justify-content-center card-container rounded-4 my-4 p-3 d-flex'>
 
                 <Row className='d-flex justify-content-center gap-3'>
-                    {filteredData.map((item) => <PlayerCard {...item} />)}
+                    {filteredData.map((item,index) => <PlayerCard {...item} key={index} />)}
                 </Row>
 
             </div>
